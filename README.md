@@ -7,7 +7,7 @@ npm install express ejs mongoexport nodemon
 
 # Usage
 ```
-in terminal cd into src folderand type nodemon app
+in terminal cd into src folder and type nodemon app
 open any web browser and type http://localhost:3000/
 enter id to take attendance
 to export data run the following command in terminal 
