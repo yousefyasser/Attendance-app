@@ -1,5 +1,5 @@
 Timestamp
-First name 
+First name
 Last name
 Open sessions
 City
