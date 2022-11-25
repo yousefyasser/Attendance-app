@@ -39,6 +39,17 @@ app.get('/event', (req, res) => {
 })
                 
 app.get('/event/attended', (req, res) => {
+    db.collection('event')
+    .updateOne({id: req.query.id}, {$push: {"Timestamp": getDate()}})
+    .then(result => {
+        res.render('attended.ejs')
+    })
+    .catch(err => {
+        res.status(500).json({error: 'Could not Update document'})
+    })
+})
+
+function getDate(){
     let date_time = new Date();
     let day = ("0" + date_time.getDate()).slice(-2);
     let month = ("0" + (date_time.getMonth() + 1)).slice(-2);
@@ -48,12 +59,5 @@ app.get('/event/attended', (req, res) => {
     let seconds = date_time.getSeconds();
     let update = day + "-" + month + "-" + year + " " + hours + ":" + minutes + ":" + seconds
 
-    db.collection('event')
-    .updateOne({id: req.query.id}, {$push: {"Timestamp": update}})
-    .then(result => {
-        res.render('attended.ejs')
-    })
-    .catch(err => {
-        res.status(500).json({error: 'Could not Update document'})
-    })
-})
+    return update
+}
