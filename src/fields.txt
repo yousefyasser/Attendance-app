@@ -1,0 +1,26 @@
+Timestamp
+First name 
+Last name
+Open sessions
+City
+Country
+Email
+Email confirmation
+Phone number
+University
+Faculty
+Specialization
+Academic degree
+Google Scholar / Scopus / LinkedIn account
+Attendance
+Certificate
+Session choice
+unnamed: 19
+unnamed: 20
+unnamed: 21
+unnamed: 22
+unnamed: 23
+Role
+name
+id
+QR_code
