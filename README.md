@@ -2,12 +2,13 @@
 
 ```
 Dependencies:
-npm install express ejs mongoexport nodemon
+npm install nodemon -g
+npm install express ejs
 ```
 
 # Usage
 ```
-in terminal cd into src folder and type nodemon app
+in terminal, cd into src folder and type nodemon app
 open any web browser and type http://localhost:3000/
 enter id to take attendance
 to export data run the following command in terminal 
